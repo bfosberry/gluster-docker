@@ -1,0 +1,13 @@
+version: "2"
+
+networks:
+  glusternet:
+
+services:
+  gluster:
+    image: gluster/gluster-centos
+    privileged: true
+    tty: true
+    networks:
+      glusternet:
+
